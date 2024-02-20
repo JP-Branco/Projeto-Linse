@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ADCForm</class>
+ <widget class="QWidget" name="ADCForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>609</width>
+    <height>56</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>2</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="adcframe">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>10</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>8</number>
+      </property>
+      <property name="bottomMargin">
+       <number>4</number>
+      </property>
+      <property name="horizontalSpacing">
+       <number>5</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>2</number>
+      </property>
+      <item row="0" column="7" colspan="2">
+       <widget class="QComboBox" name="comboADCRange">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <item>
+         <property name="text">
+          <string>±6.144 V</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>±4.096 V</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>±2.048 V</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>±1.024 V</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>±0.512 V</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>±0.256 V</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="7">
+       <widget class="QComboBox" name="comboRate1115">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="currentText">
+         <string>860 SPS</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>8 SPS</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>16 SPS</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>32 SPS</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>64 SPS</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>128 SPS</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>250 SPS</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>475 SPS</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>860 SPS</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="8">
+       <widget class="QComboBox" name="comboRate1015">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="currentText">
+         <string>1600 SPS</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>128 SPS</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>250 SPS</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>490 SPS</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>920 SPS</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1600 SPS</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2400 SPS</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3300 SPS</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QRadioButton" name="radioADC4">
+        <property name="text">
+         <string>Channel 4</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Model:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QComboBox" name="comboADCModel">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <item>
+         <property name="text">
+          <string>ADS1115</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>ADS1015</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="6">
+       <widget class="QLabel" name="label_30">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>Range:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5" rowspan="3">
+       <widget class="Line" name="line_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QRadioButton" name="radioADC1">
+        <property name="text">
+         <string>Channel 1</string>
+        </property>
+        <property name="autoRepeat">
+         <bool>false</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="6">
+       <widget class="QLabel" name="label_33">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Rate:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" rowspan="3">
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QRadioButton" name="radioOff">
+        <property name="text">
+         <string>Off</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QRadioButton" name="radioADC3">
+        <property name="text">
+         <string>Channel 3</string>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QRadioButton" name="radioADC2">
+        <property name="text">
+         <string>Channel 2</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,15 @@
+pyside2-uic --output=..\ActVib\VibViewWindow.py VibViewWindow.ui
+pyside2-uic --output=..\ActVib\PlotDialog.py PlotDialog.ui
+pyside2-uic --output=..\ActVib\UploadDialog.py UploadDialog.ui
+pyside2-uic --output=..\ActVib\WorkdirDialog.py WorkdirDialog.ui
+pyside2-uic --output=..\ActVib\IMUPanel.py IMUPanel.ui
+pyside2-uic --output=..\ActVib\GeneratorPanel.py GeneratorPanel.ui
+pyside2-uic --output=..\ActVib\PlotCfgPanel.py PlotCfgPanel.ui
+pyside2-uic --output=..\ActVib\ControlPanel.py ControlPanel.ui
+pyside2-uic --output=..\ActVib\ADCPanel.py ADCPanel.ui
+pyside2-uic --output=..\ActVib\PathModeling.py PathModeling.ui
+pyside2-uic --output=..\ActVib\DataViewer.py DataViewer.ui
+pyside2-uic --output=..\ActVib\Additional.py Additional.ui
+pyside2-uic --output=..\ActVib\AutomatorDialog.py AutomatorDialog.ui
+pyside2-uic --output=..\ActVib\UpdaterDialog.py UpdaterDialog.ui
+pyside2-uic --output=..\ActVib\MainFigContextMenu.py MainFigContextMenu.ui
